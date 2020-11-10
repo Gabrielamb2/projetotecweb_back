@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1 class="text-center title-1"> API </
+h1>
+<!-- busca -->
+    <form action="/buscar" method="post">
+        <p>Busca:<input type="text" name="pesquisa" /></p>
+        <p><input type="submit" value="Pesquisar" /></p>
+    </form>
+<!-- conversão -->
+    <form action="/converter" method="post">
+        Ingrediente:
+        <select name="ingre">
+            <option value="flour">flour</option> 
+            <option value="valor2">Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+        Converter:
+        <input type="text" name="valor" id=valor />
+        <select name="medicao_antes">
+            <option value="cups">cups</option> 
+            <option value="valor2">Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+        
+        para :
+        <select name="medicao_depois">
+            <option value="grams">grams</option> 
+            <option value="valor2">Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+        <button >Converter </button>
+    </form>
+
+<!-- pesquisa receita nutrientes-->
+<form action="/receitas" method="post">
+    <p><input type="submit" value="Receitas" /></p>
+</form>
+
+<!-- substituto ingredientes-->
+<form action="/ingredientes" method="post">
+    <p><input type="submit" value="Ingredientes substituto" /></p>
+</form>
+
+<!-- frases curiosas sobre a comida-->
+<form action="/curiosidades" method="post">
+    <p><input type="submit" value="Curiosidades sobre comidas" /></p>
+</form>
+
+<!-- criar cartão de receita-->
+<form action="/criareceita" method="post">
+    <p><input type="submit" value="criar cartão de receita" /></p>
+</form>
+        
+</body>
+</html>
